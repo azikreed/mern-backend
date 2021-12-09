@@ -1,0 +1,20 @@
+{
+  "name": "mern-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.server.js",
+  "scripts": {
+    "start": "nodemon ./src/index.server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azikreed/mern-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azikreed/mern-backend/issues"
+  },
+  "homepage": "https://github.com/azikreed/mern-backend#readme"
+}
