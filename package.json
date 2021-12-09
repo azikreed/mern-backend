@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/azikreed/mern-backend/issues"
   },
-  "homepage": "https://github.com/azikreed/mern-backend#readme"
+  "homepage": "https://github.com/azikreed/mern-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "mongoose": "^6.1.0"
+  }
 }
