@@ -1,3 +1,6 @@
+[1-video: Mern Stack Project | Ecommerce Website | Flipkart Clone User And Admin Rest Api - 02
+](https://youtu.be/kXfRQ0NiyLI)
+
 **Branch name: user_and_main**
 
 Ushbu videoda tushunganlarim va ketma-ketliklar:
