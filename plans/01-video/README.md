@@ -1,7 +1,7 @@
 [1-video: Mern Stack Project | Ecommerce Website | Flipkart Clone User And Admin Rest Api - 02
 ](https://youtu.be/kXfRQ0NiyLI)
 
-**Branch name: user_and_main**
+**Branch name: `user_and_main`**
 
 Bu projectning har bir qismi uchun alohida branch ochib olishni to'g'ri deb bildim. 1 - branchim esa: **user_and_main** 
 > Ushbu videoda tushunganlarim va ketma-ketliklar:

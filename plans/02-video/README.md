@@ -1,6 +1,6 @@
 [2-video: Mern Stack Project | Ecommerce Flipkart Clone | Admin Login Rest Api - 03](https://youtu.be/lig_s3gJngc)
 
-**Branch name: user_and_admin**
+**Branch name: `user_and_admin`**
 
 > Ushbu videoda tushunganlarim va ketma-ketliklar:
 1. Userlar haqida ma'lumotlar saqlash uchun **MongoDB** dagi clusterni ichida ***users*** nomli *collection* yaratib oldim.
