@@ -2,9 +2,9 @@
 ](https://youtu.be/kXfRQ0NiyLI)
 
 **Branch name: user_and_main**
+Bu projectning har bir qismi uchun alohida branch ochib olishni to'g'ri deb bildim. 1 - branchim esa: **user_and_main** 
+> Ushbu videoda tushunganlarim va ketma-ketliklar:
 
-Ushbu videoda tushunganlarim va ketma-ketliklar:
-> Bu projectning har bir qismi uchun alohida branch ochib olishni to'g'ri deb bildim. 1 - branchim esa: **user_and_main** 
 1. ***npm init*** orqali initialize qilib oldim.
 2. Kerakli packagelarni ya'ni ***express, express-validator, mongoose, bcrypt, dotenv, body-parser*** va ***nodemon*** larni install qilib oldim.
 3. *package.json* da **main** file ni *index.server.js* deb olib **src** papka ochib uning ichida ***index.server.js*** ni yaratib oldim.
