@@ -8,17 +8,19 @@ env.config();
 const PORT = process.env.PORT;
 
 //routes
-const userRoutes = require('./routes/user');
+const userRoutes = require('./routes/auth');
+const adminRoutes = require('./routes/admin/auth');
 
+app.use(bodyParser());
 //database connect
 mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.mfgtv.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`)
 .then(console.log('Database connected...'));
 
 
 
-app.use(bodyParser());
 
 app.use('/api', userRoutes);
+app.use('/api', adminRoutes);
 
 //listen
 app.listen(PORT, ()=>{
