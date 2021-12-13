@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 //create Schema
 const userSchema = new mongoose.Schema({
@@ -45,11 +45,11 @@ const userSchema = new mongoose.Schema({
     profilePicture: {type: String},
 }, {timestamps: true})
 
-userSchema.virtual('password')
-.set(function(password){
-    let newPass = password.toString()
-    this.hash_password = bcrypt.hashSync(newPass, 10);
-})
+// userSchema.virtual('password')
+// .set(function(password){
+//     let newPass = password.toString()
+//     this.hash_password = bcrypt.hashSync(newPass, 10);
+// })
 
 userSchema.virtual('fullName')
 .get(function(){
@@ -57,9 +57,9 @@ userSchema.virtual('fullName')
 })
 
 userSchema.methods = {
-    authenticate: function(password){
+    authenticate: async function(password){
         let newPass = password.toString()
-        return bcrypt.compareSync(newPass, this.hash_password);
+        return await bcrypt.compare(newPass, this.hash_password);
     }
 }
 
