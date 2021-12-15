@@ -74,7 +74,8 @@ exports.updateCategories = async (req, res)=>{
         for(let i = 0; i < name.length; i++){
             const category = {
                 name: name[i],
-                type: type[i]
+                type: type[i],
+                _id: _id[i]
             };
             if(parentId[i] !== ""){
                 category.parentId = parentId[i];
