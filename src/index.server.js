@@ -6,6 +6,7 @@ const path = require('path');
 const env = require('dotenv');
 env.config();
 const PORT = process.env.PORT;
+const cors = require('cors')
 
 //routes
 const userRoutes = require('./routes/auth');
@@ -22,6 +23,7 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO
 
 
 app.use(express.json())
+app.use(cors())
 app.use('/public', express.static(path.join(__dirname, 'uploads') ))
 
 app.use('/api', userRoutes);
