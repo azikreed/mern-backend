@@ -1,6 +1,9 @@
 [22-video: MERN Stack Project | Ecommerce Website | Place Order Checkout - 36
 ](https://youtu.be/OORCi6VV9mk)
 
+[23-video: MERN Stack Project | Ecommerce Website | Order Summary - 39
+](https://youtu.be/E6eIznCI_xI)
+
 **Branch name: `order`**
 
 > Ushbu videoda tushunganlarim va ketma-ketliklar:
