@@ -2,7 +2,7 @@ const Order = require('../../models/order');
 
 exports.updateOrder = (req, res) => {
     Order.updateOne(
-        {user: req.body.userId, "orderStatus.type": req.body.type},
+        {_id: req.body.orderId, "orderStatus.type": req.body.type},
         {
             $set: {
                 "orderStatus.$": [{type: req.body.type, date: new Date(), isCompleted: true}],
@@ -15,3 +15,10 @@ exports.updateOrder = (req, res) => {
         }
     })
 };
+
+exports.getCustomerOrder = async (req, res) => {
+    const orders = await Order.find({})
+        .populate("items.productId", "name")
+        .exec();
+    res.status(200).json({orders})
+}
