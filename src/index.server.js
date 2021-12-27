@@ -18,7 +18,7 @@ const initialDataRoutes = require('./routes/admin/initialData');
 const pageRoutes = require('./routes/admin/page');
 const addressRoutes = require('./routes/address');
 const orderRoutes = require('./routes/order');
-const adminOrderRoute = require('./routes/admin/order.admin')
+const adminOrderRoute = require('./routes/admin/order.routes')
 
 //database connect
 mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.mfgtv.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`)

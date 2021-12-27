@@ -103,3 +103,24 @@ exports.getCartItems = (req, res) => {
         }
     })
 }
+
+exports.removeCartItems = (req, res) => {
+    const { productId } = req.body.payload;
+    if(productId) {
+        Cart.update(
+            {user: req.user._id},
+            {
+                $pull: {
+                    cartItems: {
+                        product: productId,
+                    },
+                },
+            }
+        ).exec((error, result) => {
+            if(error) return res.status(400).json({error});
+            if(result) {
+                res.status(202).json({result})
+            }
+        })
+    }
+}
